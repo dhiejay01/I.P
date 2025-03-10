@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Margins</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #4a4a4a;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        p {
+            margin: 15px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        code {
+            background-color: #f0f0f0;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+        .example {
+            background-color: #e7f3fe;
+            border: 1px solid #a2c2e6;
+            padding: 15px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #777;
+        }
+        ul {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>CSS Margins</h1>
+<nav>
+
+
+
+    <a href="index.html">Back to home</a>
+
+    <a href="Css Lesson 1.html">What is CSS?</a>
+    <a href="css2.html">CSS Border Width</a>
+    <a href="css3.html">CSS Margin</a>
+    </nav>
+<section>
+    <h2>Introduction</h2>
+    <p>Margins are used to create space around elements, outside of any defined borders.</p>
+    <p>This element has a margin of <strong>70px</strong>.</p>
+    <p>The CSS margin properties are used to create space around elements, outside of any defined borders.</p>
+</section>
+
+<section>
+    <h2>Margin - Individual Sides</h2>
+    <p>CSS has properties for specifying the margin for each side of an element:</p>
+    <ul>
+        <li><code>margin-top</code></li>
+        <li><code>margin-right</code></li>
+        <li><code>margin-bottom</code></li>
+        <li><code>margin-left</code></li>
+    </ul>
+    <p>All the margin properties can have the following values:</p>
+    <ul>
+        <li><code>auto</code> - the browser calculates the margin</li>
+        <li><code>length</code> - specifies a margin in px, pt, cm, etc.</li>
+        <li><code>%</code> - specifies a margin in % of the width of the containing element</li>
+        <li><code>inherit</code> - specifies that the margin should be inherited from the parent element</li>
+    </ul>
+    <p><strong>Tip:</strong> Negative values are allowed.</p>
+
+    <h3>Example</h3>
+    <div class="example">
+        <p style="margin-top: 100px; margin-bottom: 100px; margin-right: 150px; margin-left: 80px;">
+            Set different margins for all four sides of a <code>&lt;p&gt;</code> element.
+        </p>
+    </div>
+</section>
+
+<section>
+    <h2>Margin - Shorthand Property</h2>
+    <p>To shorten the code, you can specify all the margin properties in one property.</p>
+    <p>The <code>margin</code> property is a shorthand property for the following individual margin properties:</p>
+    <ul>
+        <li><code>margin-top</code></li>
+        <li><code>margin-right</code></li>
+        <li><code>margin-bottom</code></li>
+        <li><code>margin-left</code></li>
+    </ul>
+
+    <h3>Example</h3>
+    <p>Use the margin shorthand property with four values:</p>
+    <code>margin: 25px 50px 75px 100px;</code>
+    <p>In this case:</p>
+    <ul>
+        <li>Top margin is 25px</li>
+        <li>Right margin is 50px</li>
+        <li>Bottom margin is 75px</li>
+        <li>Left margin is 100px</li>
+    </ul>
+
+    <h3>More Examples</h3>
+    <p>Use the margin shorthand property with three values:</p>
+    <code>margin: 25px 50px 75px;</code>
+    <p>In this case:</p>
+    <ul>
+        <li>Top margin is 25px</li>
+        <li>Right and left margins are 50px</li>
+        <li>Bottom margin is 75px</li>
+    </ul>
+
+    <p>Use the margin shorthand property with two values:</p>
+    <code>margin: 25px 50px;</code>
+    <p>In this case:</p>
+    <ul>
+        <li>Top and bottom margins are 25px</li>
+        <li>Right and left margins are 50px</li>
+    </ul>
+
+    <p>Use the margin shorthand property with one value:</p>
+    <code>margin: 25px;</code>
+    <p>In this case, all four margins are 25px.</p>
+</section>
+
+<section>
+    <h2>The auto Value</h2>
+    <p>You can set the margin property to <code>auto</code> to horizontally center the element within its container.</p>
+    <h3>Example</h3>
+    <code>div { width: 300px; margin: auto; border: 1px solid red; }</code>
+</section>
+
+<section>
+    <h2>The inherit Value</h2>
+    <p>This example lets the left margin of the <code>&lt;p class="ex1"&gt;</code> element be inherited from the parent element (<code>&lt;div&gt;</code>):</p>
+    <h3>Example</h3>
+    <code>div { border: 1px solid red; margin-left: 100px; }</code>
+    <code>p.ex1 { margin-left: inherit; }</code>
+</section>
+
+<footer>
+    <p>&copy; 2025 CSS Margins Tutori

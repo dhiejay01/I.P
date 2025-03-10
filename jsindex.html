@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Lesson Tutorial</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            background-color: #f4f4f9;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #BE5985;
+            color: white;
+        }
+        h2 {
+            color: #333;
+        }
+        .code-editor {
+            background-color: #BE5985;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            width: 100%;
+            font-family: monospace;
+            font-size: 16px;
+        }
+        .output {
+            background-color: #eee;
+            color: #333;
+            padding: 10px;
+            border-radius: 8px;
+        }
+        .btn {
+            background-color: #EC7FA9;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .btn:hover {
+            background-color: #ffb8e0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Learn JavaScript: Beginner's Tutorial</h1>
+        <p>Welcome to the JavaScript tutorial! Follow along with the examples below and try running the code yourself.</p>
+    </header>
+
+    <section>
+        <h2>Introduction to JavaScript</h2>
+        <p>JavaScript is a programming language that lets you implement complex things on web pages. It is one of the core technologies of web development, along with HTML and CSS.</p>
+    </section>
+
+    <section>
+        <h2>Your First JavaScript Example</h2>
+        <p>In this example, we will learn how to create a simple JavaScript alert box.</p>
+
+        <div class="code-editor" contenteditable="true">
+            <pre>
+                // JavaScript code example
+                function showAlert() {
+                    alert("Hello, welcome to your first JavaScript tutorial!");
+                }
+                showAlert();  // Calling the function to show the alert
+            </pre>
+        </div>
+        <button class="btn" onclick="showAlert()">Run Code</button>
+    </section>
+
+    <section>
+        <h2>Explanation</h2>
+        <p>Here's how the code works:</p>
+        <ul>
+            <li><strong>function showAlert():</strong> This defines a function named "showAlert".</li>
+            <li><strong>alert():</strong> This is a built-in JavaScript function that shows a message in a popup box on the screen.</li>
+            <li><strong>showAlert();</strong> This calls the function, which triggers the alert box.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Live Output</h2>
+        <div class="output">
+            <a href="jsoutput.html">JavaScript Output</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 JavaScript Tutorial. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function showAlert() {
+            alert("Hello, welcome to your first JavaScript tutorial!");
+        }
+    </script>
+
+</body>
+</html>

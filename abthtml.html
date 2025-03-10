@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn the basics of HTML, including structure, elements, and how to create your first web page.">
+    <title>HTML Lessons</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #BE5985;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background: #ffb8e0;
+            color: white;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        nav a:hover {
+            background: #EC7FA9;
+        }
+        section {
+            background: #ffffff;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        h3 {
+            color: #555;
+        }
+        pre {
+            background-color: #eaeaea;
+            padding: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #35424a;
+            color: #ffffff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>HTML Lessons</h1>
+</header>
+
+<nav>
+    <a href="index.html">Back to home</a>
+    <a href="#html-introduction">HTML Introduction</a>
+    <a href="#html-editors">HTML Editors</a>
+    <a href="#html-examples">HTML Basic Examples</a>
+    <a href="#html-elements">HTML Elements</a>
+</nav>
+
+<section id="html-introduction">
+    <h2>HTML Introduction</h2>
+    <p>HTML is the standard markup language for creating Web pages.</p>
+    <!-- Existing content here -->
+</section>
+
+<section id="html-editors">
+    <h2>HTML Editors</h2>
+    <p>A simple text editor is all you need to learn HTML.</p>
+    <!-- Existing content here -->
+</section>
+
+<section id="html-examples">
+    <h2>HTML Basic Examples</h2>
+    <p>In this chapter we will show some basic HTML examples.</p>
+    <!-- Existing content here -->
+</section>
+
+<section id="html-elements">
+    <h2>HTML Elements</h2>
+    <p>An HTML element is defined by a start tag, some content, and an end tag.</p>
+    <p>The HTML element is everything from the start tag to the end tag:</p>
+    <pre><code>&lt;tagname&gt;Content goes here...&lt;/tagname&gt;</code></pre>
+
+    <h3>Examples of some HTML elements:</h3>
+    <pre><code>&lt;h1&gt;My First Heading&lt;/h1&gt;
+&lt;p&gt;My first paragraph.&lt;/p&gt;</code></pre>
+
+    <table>
+        <tr>
+            <th>Start tag</th>
+            <th>Element content</th>
+            <th>End tag</th>
+        </tr>
+        <tr>
+            <td><code>&lt;h1&gt;</code></td>
+            <td>My First Heading</td>
+            <td><code>&lt;/h1&gt;</code></td>
+        </tr>
+        <tr>
+            <td><code>&lt;p&gt;</code></td>
+            <td>My first paragraph.</td>
+            <td><code>&lt;/p&gt;</code></td>
+        </tr>
+        <tr>
+            <td><code>&lt;br&gt;</code></td>
+            <td>none</td>
+            <td>none</td>
+        </tr>
+    </table>
+
+    <p>Note: Some HTML elements have no content (like the <code>&lt;br&gt;</code> element). These elements are called empty elements. Empty elements do not have an end tag!</p>
+
+    <h3>Nested HTML Elements</h3>
+    <p>HTML elements can be nested (this means that elements can contain other elements).</p>
+    <p>All HTML documents consist of nested HTML elements.</p>
+    <p>The following example contains four HTML elements (<code>&lt;html&gt;</code>, <code>&lt;body&gt;</code>, <code>&lt;h1&gt;</code> and <code>&lt;p&gt;</code>):</p>
+
+    <h4>Example</h4>
+    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;h1&gt;My First Heading&lt;/h1&gt;
+&lt;p&gt;My first paragraph.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+    <h3>Example Explained</h3>
+    <p>The <code>&lt;html&gt;</code> element is the root element and it defines the whole HTML document.</p>
+    <p>It has a start tag <code>&lt;html&gt;</code> and an end tag <code>&lt;/html&gt;</code>.</p>
+    <p>Then, inside the <code>&lt;html&gt;</code> element there is a <code>&lt;body&gt;</code> element:</p>
+    <pre><code>&lt;body&gt;
+&lt;h1&gt;My First Heading&lt;/h1&gt;
+&lt;p&gt;My first paragraph.&lt;/p&gt;
+&lt;/body&gt;</code></pre>
+
+    <p>The <code>&lt;body&gt;</code> element defines the document's body.</p>
+    <p>It has a start tag <code>&lt;body&gt;</code> and an end tag <code>&lt;/body&gt;</code>.</p>
+    <p>Then, inside the <code>&lt;body&gt;</code> element there are two other elements: <code>&lt;h1&gt;</code> and <code>&lt;p&gt;</code>:</p>
+    <pre><code>&lt;h1&gt;My First Heading&lt;/h1&gt;
+&lt;p&gt;My first paragraph.&lt;/p&gt;</code></pre>
+
+    <h3>Never Skip the End Tag</h3>
+    <p>Some HTML elements will display correctly, even if you forget the end tag:</p>
+    <pre><code>&lt;html&gt;
+&lt;body&gt;
+
+&lt;p&gt;This is a paragraph
+&lt;p&gt;This is a paragraph
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    <p>However, never rely on this! Unexpected results and errors may occur if you forget the end tag!</p>
+
+    <h3>Empty HTML Elements</h3>
+    <p>HTML elements with no content are called empty elements.</p>
+    <p>The <code>&lt;br&gt;</code> tag defines a line break, and is an empty element without a closing tag:</p>
+    <pre><code>&lt;p&gt;This is a &lt;br&gt; paragraph with a line break.&lt;/p&gt;</code></pre>
+
+    <h3>HTML is Not Case Sensitive</h3>
+    <p>HTML tags are not case sensitive: <code>&lt;P&gt;</code> means the same as <code>&lt;p&gt;</code>.</p>
+    <p>The HTML standard does not require lowercase tags, but W3C recommends lowercase in HTML, and demands lowercase for stricter document types like XHTML.</p>
+</section>
+
+<footer>
+    <p>&copy; 2025 HTML Tutorial. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

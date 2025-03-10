@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Border Width</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #4a4a4a;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        p {
+            margin: 15px 0;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .example {
+            background-color: #e7f3fe;
+            border: 1px solid #a2c2e6;
+        }
+        .specific {
+            background-color: #dff0d8;
+            border: 1px solid #b2dba1;
+        }
+        .one {
+            border-style: solid;
+            border-width: 5px;
+        }
+        .two {
+            border-style: solid;
+            border-width: medium;
+        }
+        .three {
+            border-style: dotted;
+            border-width: 2px;
+        }
+        .four {
+            border-style: dotted;
+            border-width: thick;
+        }
+        .specific-one {
+            border-style: solid;
+            border-width: 5px 20px; /* 5px top and bottom, 20px on the sides */
+        }
+        .specific-two {
+            border-style: solid;
+            border-width: 20px 5px; /* 20px top and bottom, 5px on the sides */
+        }
+        .specific-three {
+            border-style: solid;
+            border-width: 25px 10px 4px 35px; /* 25px top, 10px right, 4px bottom and 35px left */
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+<h1>CSS Border Width</h1>
+<nav>
+
+
+
+    <a href="index.html">Back to home</a>
+
+    <a href="Css Lesson 1.html">What is CSS?</a>
+    <a href="css2.html">CSS Border Width</a>
+    <a href="css4.html">CSS Margin</a>
+    </nav>
+
+<section>
+    <h2>Introduction</h2>
+    <p>The <strong>border-width</strong> property specifies the width of the four borders.</p>
+    <p>The width can be set as a specific size (in px, pt, cm, em, etc.) or by using one of the three pre-defined values: thin, medium, or thick:</p>
+</section>
+
+<section>
+    <h2>Example</h2>
+    <h3>Demonstration of the different border widths:</h3>
+    <p class="one example">5px border-width</p>
+    <p class="two example">medium border-width</p>
+    <p class="three example">2px border-width</p>
+    <p class="four example">thick border-width</p>
+</section>
+
+<section>
+    <h2>Specific Side Widths</h2>
+    <p>The <strong>border-width</strong> property can have from one to four values (for the top border, right border, bottom border, and the left border):</p>
+    
+    <h3>Example</h3>
+    <p class="specific-one specific">5px top and bottom, 20px on the sides</p>
+    <p class="specific-two specific">20px top and bottom, 5px on the sides</p>
+    <p class="specific-three specific">25px top, 10px right, 4px bottom and 35px left</p>
+</section>
+
+<footer>
+    <p>&copy; 2025 CSS Border Width Tutorial</p>
+</footer>
+
+</body>
+</html>

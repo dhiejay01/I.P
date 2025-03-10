@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Introduction</title>
+    <style id="stylesheet1">
+        body {
+            background-color: BE5985;
+            color: #333;
+        }
+        h1 {
+            color: white;
+            text-align: center;
+        }
+        p {
+            font-family: verdana;
+            font-size: 20px;
+        }
+    </style>
+    <style id="stylesheet2" disabled>
+        body {
+            background-color: lightgreen;
+            color: #222;
+        }
+        h1 {
+            color: darkgreen;
+            text-align: center;
+        }
+        p {
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+        }
+    </style>
+    <style id="stylesheet3" disabled>
+        body {
+            background-color: lightcoral;
+            color: #fff;
+        }
+        h1 {
+            color: yellow;
+            text-align: center;
+        }
+        p {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 22px;
+        }
+    </style>
+    <style id="stylesheet4" disabled>
+        body {
+            background-color: lavender;
+            color: #444;
+        }
+        h1 {
+            color: blue;
+            text-align: center;
+        }
+        p {
+            font-family: Georgia, serif;
+            font-size: 19px;
+        }
+    </style>
+    <style>
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav ul {
+            list-style-type: disc;
+            padding: 0;
+            display: inline-block;
+        }
+        nav li {
+            margin: 5px 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+    <script>
+        function switchStylesheet(sheetId) {
+            // Disable all stylesheets
+            document.querySelectorAll('style[id^="stylesheet"]').forEach(style => {
+                style.disabled = true;
+            });
+            // Enable the selected stylesheet
+            if (sheetId) {
+                document.getElementById(sheetId).disabled = false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>CSS Introduction</h1>
+    <nav>
+
+    <a href="index.html">Back to home</a>
+
+    <a href="css2.html">CSS Border</a>
+    <a href="css3.html">CSS Border Width</a>
+    <a href="css4.html">CSS Margin</a>
+    </nav>
+    
+    <div class="content">
+        <p>CSS is the language we use to style a Web page.</p>
+        
+        <h2>What is CSS?</h2>
+        <p>CSS stands for Cascading Style Sheets. CSS describes how HTML elements are to be displayed on screen, paper, or in other media. CSS saves a lot of work. It can control the layout of multiple web pages all at once. External stylesheets are stored in CSS files.</p>
+        
+        <h2>CSS Demo - One HTML Page - Multiple Styles!</h2>
+        <p>Here we will show one HTML page displayed with four different stylesheets. Click on the links below to see the different styles:</p>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="switchStylesheet('stylesheet1')">Stylesheet 1</a></li>
+                <li><a href="#" onclick="switchStylesheet('stylesheet2')">Stylesheet 2</a></li>
+                <li><a href="#" onclick="switchStylesheet('stylesheet3')">Stylesheet 3</a></li>
+                <li><a href="#" onclick="switchStylesheet('stylesheet4')">Stylesheet 4</a></li>
+                <li><a href="#" onclick="switchStylesheet('')">No Stylesheet</a></li>
+            </ul>
+        </nav>
+
+        <h2>Same Page Different Stylesheets</h2>
+        <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu.</p>
+
+        <h2>No Styles</h2>
+        <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet: <a href="#">No Stylesheet.</a></p>
+
+        <h2>Why Use CSS?</h2>
+        <p>CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes.</p>
+
+        <h2>CSS Example</h2>
+        <pre>
+        <code>
+        body {
+            background-color: lightblue;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+        }
+
+        p {
+            font-family: verdana;
+            font-size: 20px;
+        }
+        </code>
+        </pre>
+
+        <h2>CSS Solved a Big Problem</h2>
+        <p>HTML was NEVER intended to contain tags for formatting a web page! HTML was created to describe the content of a web page, like:</p>
+        <pre>
+        <code>
+        &lt;h1&gt;This is a heading&lt;/h1&gt;
+        &lt;p&gt;This is a paragraph.&lt;/p&gt;
+        </code>
+        </pre>
+        <p>When tags like <code>&lt;font&gt;</code>, and color attributes were added to the HTML 3.2 specification, it started a nightmare for web developers... To solve this problem, the World Wide Web Consortium (W3C) created CSS.</p>
+        <p>CSS removed the style formatting from the HTML page!</p>
+        <p>If you don't know what HTML is, we suggest that you read our <a href="#">HTML Tutorial</a>.</p>
+
+        <h2>CSS Saves a Lot of Work!</h2>
+        <p>The style definitions are normally saved in external .css files. With an external stylesheet file, you can change the look of an entire website by changing just one file!</p>
+    </div>
+</body>
+</html>

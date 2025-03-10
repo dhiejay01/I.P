@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn Web Development</title>
+  
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+    }
+
+    header {
+      background-color: #BE5985;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+    }
+
+    .dropbtn {
+      background-color: #ffb8e0;
+      color: white;
+      padding: 12px 16px;
+      font-size: 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .dropdown { 
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #ffffff;
+      min-width: 160px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      z-index: 1;
+      border-radius: 4px;
+    }
+
+    .dropdown-content a {
+      color: #333;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f0f0f0;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+      background-color: #EC7FA9;
+    }
+
+    main {
+      margin-top: 20px;
+    }
+
+    section {
+      margin-bottom: 20px;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
+</head>
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <h1 class="sitename">ICT PROGRAMMING</h1>
+    <p>Your go-to platform for advanced learning HTML, CSS, and JavaScript!</p>
+  </header>
+  
+  <section>
+    <div class="dropdown">
+      <button class="dropbtn">≡</button>
+      <div class="dropdown-content">
+        <a href="Lesson 1.html">HTML</a>
+        <a href="CSS lesson 1.html">CSS</a>
+        <a href="#javascript">JavaScript</a>
+        <a href="tutorial.html">Tutorial</a>
+        <a href="quiz.html">Quiz</a>
+      </div>
+    </div>
+  </section>  
+  
+  <main>
+    <section id="html">
+      <h3>HTML Overview</h3>
+      <p>HTML is the standard language for creating web pages.</p>
+      <div>
+        <h1>What is HTML?</h1>
+        <ul>
+          <li>HTML stands for Hyper Text Markup Language</li>
+          <li>HTML is the standard markup language for creating Web pages</li>
+          <li>HTML describes the structure of a Web page</li>
+          <li>HTML consists of a series of elements</li>
+          <li>HTML elements tell the browser how to display the content</li>
+          <li>HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.</li>
+        </ul>
+      </div>  
+    </section>
+
+    <section id="css">
+      <h2>CSS Overview</h2>
+      <p>CSS (Cascading Style Sheets) is a computer language used to style the presentation of web pages. It works alongside HTML (HyperText Markup Language) to control the layout, design, and visual appearance of elements on a webpage. CSS allows web developers to separate the structure of a page (HTML) from its style, making the design more flexible and easier to manage.</p>
+
+    </section>
+
+    <section id="javascript">
+      <h2>JavaScript Overview</h2>
+      <p>JavaScript is a high-level, dynamic programming language primarily used to create interactive effects within web browsers. It enables developers to add functionality to websites, such as dynamic content updates, form validation, animations, and user interaction handling.</p>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Learn Web Development. All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Borders</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1, h2 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 40px;
+            padding: 15px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+        }
+        .border-example {
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            transition: transform 0.2s;
+        }
+        .border-example:hover {
+            transform: scale(1.02);
+        }
+        .dotted { border: 2px dotted #e74c3c; background-color: #ffe5e5; }
+        .dashed { border: 2px dashed #3498db; background-color: #e5f6ff; }
+        .solid { border: 2px solid #2ecc71; background-color: #e8f8e9; }
+        .double { border: 4px double #f1c40f; background-color: #fff9e5; }
+        .groove { border: 4px groove #8e44ad; background-color: #f5e6ff; }
+        .ridge { border: 4px ridge #e67e22; background-color: #fff4e5; }
+        .inset { border: 4px inset #2980b9; background-color: #e5f2f5; }
+        .outset { border: 4px outset #c0392b; background-color: #ffe5e5; }
+        .none { border: none; background-color: #e7e7e7; }
+        .hidden { border: hidden; background-color: #e7e7e7; }
+        .mix { 
+            border: 2px dotted #2c3e50; 
+            border-top-style: dashed; 
+            border-left-style: solid; 
+            border-right-style: double; 
+            background-color: #dfe6e9; 
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        p {
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>CSS Borders</h1>
+    
+    <section>
+        <h2>Introduction</h2>
+         <nav>
+
+
+
+    <a href="index.html">Back to home</a>
+
+    <a href="Css Lesson 1.html">What is CSS?</a>
+    <a href="css3.html">CSS Border Width</a>
+    <a href="css4.html">CSS Margin</a>
+    </nav>
+    
+        <p>The CSS border properties allow you to specify the style, width, and color of an element's border.</p>
+    </section>
+
+    <section>
+        <h2>Examples</h2>
+        <div class="border-example solid">I have borders on all sides.</div>
+        <div class="border-example" style="border-bottom: 2px solid red;">I have a red bottom border.</div>
+        <div class="border-example" style="border-radius: 10px; border: 2px solid black;">I have rounded borders.</div>
+        <div class="border-example" style="border-left: 2px solid blue;">I have a blue left border.</div>
+    </section>
+
+    <section>
+        <h2>CSS Border Style</h2>
+        <p>The border-style property specifies what kind of border to display.</p>
+        <p>The following values are allowed:</p>
+        <ul>
+            <li>dotted - Defines a dotted border</li>
+            <li>dashed - Defines a dashed border</li>
+            <li>solid - Defines a solid border</li>
+            <li>double - Defines a double border</li>
+            <li>groove - Defines a 3D grooved border</li>
+            <li>ridge - Defines a 3D ridged border</li>
+            <li>inset - Defines a 3D inset border</li>
+            <li>outset - Defines a 3D outset border</li>
+            <li>none - Defines no border</li>
+            <li>hidden - Defines a hidden border</li>
+        </ul>
+        <p>The border-style property can have from one to four values (for the top border, right border, bottom border, and left border).</p>
+    </section>
+
+    <section>
+        <h2>Demonstration of Different Border Styles</h2>
+        <div class="border-example dotted">A dotted border.</div>
+        <div class="border-example dashed">A dashed border.</div>
+        <div class="border-example solid">A solid border.</div>
+        <div class="border-example double">A double border.</div>
+        <div class="border-example groove">A groove border. The effect depends on the border-color value.</div>
+        <div class="border-example ridge">A ridge border. The effect depends on the border-color value.</div>
+        <div class="border-example inset">An inset border. The effect depends on the border-color value.</div>
+        <div class="border-example outset">An outset border. The effect depends on the border-color value.</div>
+        <div class="border-example none">No border.</div>
+        <div class="border-example hidden">A hidden border.</div>
+        <div class="border-example mix">A mixed border.</div>
+    </section>
+</div>
+
+</body>
+</html>
