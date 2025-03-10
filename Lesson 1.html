@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tutorial</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif; /* Use a modern font */
+            background-color: #f0f8ff; /* Light background for better contrast */
+        }
+        header {
+            background: #BE5985; /* Bright header color */
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        nav {
+            background: #ffb8e0; /* Bright navigation color */
+        }
+        .dropdown {
+            display: inline-block;
+        }
+        .dropbtn {
+            background: #ffb8e0; /* Match button color with nav */
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease; /* Add transition */
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #ffffff;
+            min-width: 160px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s ease; /* Add transition */
+        }
+        .dropdown-content a:hover {
+            background-color: #EC7FA9   ; /* Light hover effect */
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        section {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+            margin: 20px 0;
+        }
+        h1, h2 {
+            color: #333;
+            border-bottom: 2px solid #FDB7EA; /* Underline for headings */
+            padding-bottom: 10px;
+        }
+        h3 {
+            color: #555;
+        }
+        pre {
+            background-color: #f4f4f4;
+            border-left: 4px solid #FDB7EA; /* Highlight code block */
+            padding: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #35424a;
+            color: #ffffff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .block {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            margin: 10px 0;
+        }
+        .inline-example {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 style="color: #eaeaea;">HTML Tutorial</h1>
+</header>
+
+<nav>
+    <div class="dropdown">
+        <button class="dropbtn">TOPICS</button>
+        <div class="dropdown-content">
+            <a href="index.html">Back to Home</a>
+            <a href="#html-introduction">HTML Introduction</a>
+            <a href="#html-editors">HTML Editors</a>
+            <a href="#html-elements">HTML Elements</a>
+            <a href="#html-nested-elements">Nested HTML Elements</a>
+            <a href="#html-empty-elements">Empty HTML Elements</a>
+            <a href="#html-case-sensitivity">HTML Case Sensitivity</a>
+            <a href="#html-tag-reference">HTML Tag Reference</a>
+            <a href="#html-headings">HTML Headings</a>
+            <a href="#html-styles">HTML Styles</a>
+        </div>
+    </div>
+</nav>
+
+<section id="html-introduction">
+    <h2>HTML Introduction</h2>
+    <p>HTML is the standard markup language for creating Web pages.</p>
+    <h3>What is HTML?</h3>
+    <ul>
+        <li>HTML stands for Hyper Text Markup Language.</li>
+        <li>HTML describes the structure of a Web page.</li>
+        <li>HTML consists of a series of elements.</li>
+        <li>HTML elements tell the browser how to display the content.</li>
+        <li>HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.</li>
+    </ul>
+    <h3>A Simple HTML Document</h3>
+    <h4>Example</h4>
+    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;My First Heading&lt;/h1&gt;
+&lt;p&gt;My first paragraph.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    <h4>Example Explained</h4>
+    <ul>
+        <li>The <code>&lt;!DOCTYPE html&gt;</code> declaration defines that this document is an HTML5 document.</li>
+        <li>The <code>&lt;html&gt;</code> element is the root element of an HTML page.</li>
+        <li>The <code>&lt;head&gt;</code> element contains meta information about the HTML page.</li>
+        <li>The <code>&lt;title&gt;</code> element specifies a title for the HTML page (shown in the browser's title bar or tab).</li>
+        <li>The <code>&lt;body&gt;</code> element defines the document's body and is a container for all visible contents.</li>
+        <li>The <code>&lt;h1&gt;</code> element defines a large heading.</li>
+        <li>The <code>&lt;p&gt;</code> element defines a paragraph.</li>
+    </ul>
+</section>
+
+<section id="html-editors">
+    <h2>HTML Editors</h2>
+    <p>A simple text editor is all you need to learn HTML.</p>
+    <p>Web pages can be created and modified by using professional HTML editors.</p>
+    <p>However, for learning HTML we recommend a simple text editor like Notepad (PC) or TextEdit (Mac).</p>
+    <p>We believe that using a simple text editor is a good way to learn HTML.</p>
+    <h3>Follow the Steps Below to Create Your First Web Page with Notepad</h3>
+    <h4>Step 1: Open Notepad (PC)</h4>
+    <p>Windows 8 or later:</p>
+    <p>Open the Start Screen (the window symbol at the bottom left on your screen). Type Notepad.</p>
+    <p>Windows 7 or earlier:</p>
+    <p>Open Start > Programs > Accessories > Notepad</p>
+    <h4>Step 1: Open TextEdit (Mac)</h4>
+    <p>Open Finder > Applications > TextEdit.</p>
+    <p>Also change some preferences to get the application to save files correctly:</p>
+    <ul>
+        <li>In Preferences > Format > choose "Plain Text".</li>
+        <li>Then under "Open and Save", check the box that says "Display HTML files as HTML code instead of formatted text".</li>
+    </ul>
+    <p>Then open a new document to place the code.</p>
+    <h3>Step 2: Write Some HTML</h3>
+    <p>Write or copy the following HTML code into Notepad:</p>
+    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;h1&gt;My First Heading&lt;/h1&gt;
+
+&lt;p&gt;My first paragraph.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    <h3>Step 3: Save the HTML Page</h3>
+    <p>Save the file on your computer. Select File > Save as in the Notepad menu.</p>
+    <p>Name the file "index.htm" and set the encoding to UTF-8 (which is the preferred encoding for HTML files).</p>
+    <p><strong>Tip:</strong> You can use either .htm or .html as the file extension. There is no difference; it is up to you.</p>
+    <h3>Step 4: View the HTML Page in Your Browser</h3>
+    <p>Open the saved HTML file in your favorite browser (double click on the file, or right-click - and choose "Open with").</p>
+    <p>The result will look much like this:</p>
+    <p><strong>View in Browser</strong></p>
+</section>
+
+<section id="html-elements">
+    <h2>HTML Elements</h2>
+    <p>An HTML element is defined by a start tag, some content, and an end tag:</p>
+    <pre><code>&lt;tagname&gt; Content goes here... &lt;/tagname&gt;</code></pre>
+    <p>The HTML element is everything from the start tag to the end tag:</p>
+    <pre><code>&lt;h1&gt;My First Heading&lt;/h1&gt;
+&lt;p&gt;My first paragraph.&lt;/p&gt;</code></pre>
+    <table>
+        <tr>
+            <th>Start tag</th>
+            <th>Element content</th>
+            <th>End tag</th>
+        </tr>
+        <tr>
+            <td><code>&lt;h1&gt;</code></td>
+            <td>My First Heading</td>
+            <td><code>&lt;/h1&gt;</code></td>
+        </tr>
+        <tr>
+            <td><code>&lt;p&gt;</code></td>
+            <td>My first paragraph.</td>
+            <td><code>&lt;/p&gt;</code></td>
+        </tr>
+        <tr>
+            <td><code>&lt;br&gt;</code></td>
+            <td>none</td>
+            <td>none</td>
+        </tr>
+    </table>
+    <p>Note: Some HTML elements have no content (like the <code>&lt;br&gt;</code> element). These elements are called empty elements and do not have an end tag!</p>
+</section>
+
+<section id="html-nested-elements">
+    <h2>Nested HTML Elements</h2>
+    <p>HTML elements can be nested (this means that elements can contain other elements).</p>
+    <p>All HTML documents consist of nested HTML elements.</p>
+    <h3>Example</h3>
+    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;h1&gt;My First Heading&lt;/h1&gt;
+&lt;p&gt;My first paragraph.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+</section>
+
+<section id="html-empty-elements">
+    <h2>Empty HTML Elements</h2>
+    <p>HTML elements with no content are called empty elements.</p>
+    <p>The <code>&lt;br&gt;</code> tag defines a line break, and is an empty element without a closing tag:</p>
+    <pre><code>&lt;p&gt;This is a &lt;br&gt; paragraph with a line break.&lt;/p&gt;</code></pre>
+</section>
+
+<section id="html-case-sensitivity">
+    <h2>HTML is Not Case Sensitive</h2>
+    <p>HTML tags are not case sensitive: <code>&lt;P&gt;</code> means the same as <code>&lt;p&gt;</code>.</p>
+    <p>The HTML standard does not require lowercase tags, but W3C recommends lowercase in HTML, and demands lowercase for stricter document types like XHTML.</p>
+    <p>At W3Schools we always use lowercase tag names.</p>
+</section>
+
+<section id="html-tag-reference">
+    <h2>HTML Tag Reference</h2>
+    <table>
+        <tr>
+            <th>Tag</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td><code>&lt;html&gt;</code></td>
+            <td>Defines the root of an HTML document</td>
+        </tr>
+        <tr>
+            <td><code>&lt;body&gt;</code></td>
+            <td>Defines the document's body</td>
+        </tr>
+        <tr>
+            <td><code>&lt;h1&gt; to &lt;h6&gt;</code></td>
+            <td>Defines HTML headings</td>
+        </tr>
+    </table>
+    <p>For a complete list of all available HTML tags, visit our HTML Tag Reference.</p>
+</section>
+
+<section id="html-headings">
+    <h2>HTML Headings</h2>
+    <p>HTML headings are titles or subtitles that you want to display on a webpage.</p>
+    <h3>Example</h3>
+    <ul>
+        <li>Heading 1</li>
+        <li>Heading 2</li>
+        <li>Heading 3</li>
+        <li>Heading 4</li>
+        <li>Heading 5</li>
+        <li>Heading 6</li>
+    </ul>
+    <h3>HTML Headings</h3>
+    <p>HTML headings are defined with the <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> tags.</p>
+    <p><code>&lt;h1&gt;</code> defines the most important heading. <code>&lt;h6&gt;</code> defines the least important heading.</p>
+    <h3>Example</h3>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+    <h3>Note:</h3>
+    <p>Browsers automatically add some white space (a margin) before and after a heading.</p>
+    <h3>Headings Are Important</h3>
+    <p>Search engines use the headings to index the structure and content of your web pages.</p>
+    <p>Users often skim a page by its headings. It is important to use headings to show the document structure.</p>
+    <h3>Example of Bigger Headings</h3>
+    <p><code>&lt;h1 style="font-size:60px;"&gt;Heading 1&lt;/h1&gt;</code></p>
+    <p>Example:</p>
+    <h1 style="font-size:60px;">Heading 1</h1>
+    <h3>Note:</h3>
+    <p>Use HTML headings for headings only. Don't use headings to make text BIG or bold.</p>
+</section>
+
+<section id="html-styles">
+    <h2>HTML Styles</h2>
+    <p>The HTML style attribute is used to add styles to an element, such as color, font, size, and more.</p>
+    <h3>Example</h3>
+    <p style="color:red;">I am Red</p>
+    <p style="color:blue;">I am Blue</p>
+    <p style="font-size:24px;">I am Big</p>
+    
+    <h3>The HTML Style Attribute</h3>
+    <p>Setting the style of an HTML element can be done with the style attribute.</p>
+    <p>The HTML style attribute has the following syntax:</p>
+    <pre><code>&lt;tagname style="property:value;"&gt;</code></pre>
+    <p>The property is a CSS property. The value is a CSS value.</p>
+    <p>You will learn more about CSS later in this tutorial.</p>
+    
+    <h3>Background Color</h3>
+    <p>The CSS background-color property defines the background color for an HTML element.</p>
+    
+    <h4>Example</h4>
+    <p>Set the background color for a page to powderblue:</p>
+    <pre><code>&lt;body style="background-color:powderblue;"&gt;
+&lt;h1&gt;This is a heading&lt;/h1&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;/body&gt;</code></pre>
+    
+    <h4>Example</h4>
+    <p>Set background color for two different elements:</p>
+    <pre><code>&lt;body&gt;
+&lt;h1 style="background-color:powderblue;"&gt;This is a heading&lt;/h1&gt;
+&lt;p style="background-color:tomato;"&gt;This is a paragraph.&lt;/p&gt;
+&lt;/body&gt;</code></pre>
+    
+    <h3>Text Color</h3>
+    <p>The CSS color property defines the text color for an HTML element:</p>
+    
+    <h4>Example</h4>
+    <pre><code>&lt;h1 style="color:blue;"&gt;This is a heading&lt;/h1&gt;
+&lt;p style="color:red;"&gt;This is a paragraph.&lt;/p&gt;</code></pre>
+    
+    <h3>Fonts</h3>
+    <p>The CSS font-family property defines the font to be used for an HTML element:</p>
+    
+    <h4>Example</h4>
+    <pre><code>&lt;h1 style="font-family:verdana;"&gt;This is a heading&lt;/h1&gt;
+&lt;p style="font-family:courier;"&gt;This is a paragraph.&lt;/p&gt;</code></pre>
+    
+    <h3>Text Size</h3>
+    <p>The CSS font-size property defines the text size for an HTML element:</p>
+    
+    <h4>Example</h4>
+    <pre><code>&lt;h1 style="font-size:300%;"&gt;This is a heading&lt;/h1&gt;
+&lt;p style="font-size:160%;"&gt;This is a paragraph.&lt;/p&gt;</code></pre>
+</section
