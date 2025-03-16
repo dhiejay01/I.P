@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live JavaScript Input/Output</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        textarea {
+            width: 80%;
+            height: 200px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        #output {
+            width: 80%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            min-height: 100px;
+            white-space: pre-wrap;
+            margin-top: 10px;
+            background-color: #f9f9f9;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Live JavaScript Code Input</h2>
+<textarea id="codeInput" placeholder="Write your JavaScript code here..."></textarea>
+<button onclick="runCode()">Run Code</button>
+<div id="output"></div>
+
+<script>
+    function runCode() {
+        const userInput = document.getElementById('codeInput').value;
+        const outputElement = document.getElementById('output');
+
+        try {
+            // Clear the previous output
+            outputElement.textContent = '';
+
+            // Evaluate the user code and display the result
+            const result = eval(userInput);
+            outputElement.textContent = result;
+        } catch (error) {
+            outputElement.textContent = 'Error: ' + error.message;
+        }
+    }
+</script>
+
+</body>
+</html>
